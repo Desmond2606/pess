@@ -64,29 +64,30 @@ $mysqli->close();
 
 <fieldset>
 <lengend>Log Call</lengend>
-<form name="frmLogCall" method="post" action="dispacth.php" onSubmit="return desmond();">
+<form name="frmLogCall" method="post" action="dispatch.php" onSubmit="return desmond();">
 	<table width="40%" border="1" align="center" cellpadding="4" cellspacing="4">
 	<tr>
 	<td width="50%">Caller's Name :</td>
-	<td width="50%"><input type="text" name="callerName" id="callerName"</td>
+	<td width="50%"><input type="text" name="callerName" id="callerName"></td>
 	</tr>
+		
 	<tr>
-	<td width="50%">Caller's No :</td>
-	<td width="50%"><input type="text" name="callerNo" id="callerNo"</td>
+	<td width="50%">Contact No :</td>
+	<td><input type="text" name="contactNo" id="contactNo"></td>
 	</tr>
-	<tr>
+		
+<tr>
 	<td width="50%">Location :</td>
-	<td width="50%"><input type="text" name="location" id="location"</td>
+	<td><input type="text" name="location" id="location"></td>
 	</tr>
-	<tr>
+<tr>		
 	<td width="50%">Incident Type :</td>
-	<td width="50%"><select name="incidentType" id="incidentType">
-		<?php foreach($incidentType as $key=> $value) {?>
-		<option value="<?php echo $key ?> " >
-			<?php echo $value ?> </option>
-		<?php } ?>
-		</select>
-		</td>
+		<td><select name="incidentType" id="incidentType"> <?php foreach($incidentType as $key=> $value) {?>
+		<option value="<?php echo $key?>" > <?php echo $value ?>
+		</option>
+			<?php } ?>
+	</select>
+	</td>
 	</tr>
 		<tr>
 		<td width="50%">Description :</td>

@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+table, th, td {
+  border: 1px solid black;
+	color:black;
+	align: center;
+	text-align: center;
+}
+
+input{
+	background-color: #DCFFFB;
+	color: black;
+}
+
+textarea{
+	background-color: #DCFFFB;
+	color: black;
+}
+select{
+	background-color: #DCFFFB;
+	color: black;
+}
+button{
+		background-color: #DCFFFB;
+	color: black;
+}
+
+body {
+  background-color: #FCF4DD;
+}
+h1 {
+  color: saddlebrown;
+}
